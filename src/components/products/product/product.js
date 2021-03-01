@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import styles from './product.module.css';
 
-import { increment, decrement } from '../../redux/actions';
+import { increment, decrement } from '../../../redux/actions';
 
-import Button from '../button';
-import { amountSelector, productSelector } from '../../redux/selectors';
+import Button from '../../button';
+import { amountSelector, productSelector } from '../../../redux/selectors';
 
 const Product = ({ product, amount, increment, decrement, fetchData }) => {
   useEffect(() => {
